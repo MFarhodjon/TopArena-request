@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TopArena — Account & Data Deletion</title>
+  <meta name="description" content="TopArena account and data deletion instructions (UZ/RU/EN)." />
+  <style>
+    :root{
+      --bg:#051C33;
+      --card:rgba(7,33,70,.92);
+      --line:rgba(255,255,255,.10);
+      --text:#F5F5F5;
+      --sub:#B0BDC5;
+      --accent:#1ABC4F;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(900px 300px at 20% 0%, rgba(26,188,79,.18), transparent),
+                  radial-gradient(700px 300px at 90% 10%, rgba(26,188,79,.10), transparent),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    .wrap{max-width:900px;margin:0 auto;padding:22px 16px 44px;}
+    .header{
+      padding:14px 6px 10px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:10px;
+      font-weight:900;font-size:22px;letter-spacing:.2px;
+    }
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(26,188,79,.12)}
+    .subtitle{color:var(--sub);margin-top:8px;font-weight:700}
+    .card{
+      margin-top:14px;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      box-shadow: 0 14px 30px rgba(0,0,0,.20);
+    }
+    .tabs{
+      display:flex;gap:10px;flex-wrap:wrap;
+      margin-top:12px;
+    }
+    .tab{
+      appearance:none;border:1px solid rgba(26,188,79,.35);
+      background: rgba(26,188,79,.10);
+      color:var(--accent);
+      padding:10px 14px;border-radius:999px;
+      font-weight:900;cursor:pointer;
+      text-decoration:none;display:inline-flex;align-items:center;gap:8px;
+    }
+    .tab.secondary{
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color:var(--text);
+    }
+    h1,h2,h3{margin:0}
+    h1{font-size:18px;font-weight:900}
+    h2{font-size:16px;font-weight:900;margin-top:14px}
+    h3{font-size:14px;font-weight:900;margin-top:14px;color:rgba(255,255,255,.92)}
+    p{margin:10px 0;color:var(--sub);font-weight:700}
+    .list{margin:10px 0 0;padding-left:18px;color:var(--sub);font-weight:700}
+    .list li{margin:6px 0}
+    .pill{
+      display:inline-block;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      padding:8px 12px;border-radius:999px;
+      color:var(--text);font-weight:900;
+      margin-top:10px;
+    }
+    .email{
+      display:inline-flex;align-items:center;gap:8px;
+      color:var(--text);
+      font-weight:900;
+      text-decoration:none;
+      border-bottom:1px dashed rgba(255,255,255,.35);
+    }
+    .email:hover{color:var(--accent);border-bottom-color:var(--accent)}
+    .note{
+      margin-top:12px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      border-radius:14px;
+      padding:12px;
+      color:var(--sub);
+      font-weight:700;
+    }
+    .lang{
+      display:none;
+    }
+    .lang:target{display:block;}
+    /* default if no hash */
+    .lang.default{display:block;}
+    /* when any target active, hide default */
+    body:has(.lang:target) .lang.default{display:none;}
+    .footer{
+      margin-top:14px;
+      color:rgba(255,255,255,.55);
+      font-weight:700;
+      font-size:12px;
+      text-align:center;
+    }
+    .divider{
+      height:1px;background:var(--line);
+      margin:12px 0;
+    }
+    code.inline{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      padding:2px 6px;border-radius:8px;
+      color: rgba(255,255,255,.90);
+      font-weight:800;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="brand"><span class="dot"></span> TopArena</div>
+      <div class="subtitle">Account & Data Deletion / Akkountni o‘chirish / Удаление аккаунта</div>
+
+      <div class="tabs">
+        <a class="tab" href="#uz">UZ</a>
+        <a class="tab" href="#ru">RU</a>
+        <a class="tab" href="#en">EN</a>
+        <a class="tab secondary" href="#">Default</a>
+      </div>
+    </div>
+
+    <!-- DEFAULT (shown when no hash in URL) -->
+    <section class="card lang default" aria-label="Default">
+      <h1>Choose language</h1>
+      <p>Please select one of the languages above to view the instructions.</p>
+      <div class="note">
+        Contact email for requests: <a class="email" href="mailto:toparena.app@gmail.com">toparena.app@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- UZ -->
+    <section id="uz" class="card lang" aria-label="Uzbek">
+      <h1>Akkount va ma’lumotlarni o‘chirish</h1>
+      <p>
+        Agar siz <b>TopArena</b> ilovasidagi akkountingizni va unga bog‘liq shaxsiy ma’lumotlarni o‘chirmoqchi bo‘lsangiz,
+        quyidagi tartibni bajaring.
+      </p>
+
+      <h2>Qanday qilib so‘rov yuborish mumkin?</h2>
+      <ol class="list">
+        <li>Email yuboring: <a class="email" href="mailto:toparena.app@gmail.com">toparena.app@gmail.com</a></li>
+        <li>Mavzu (Subject): <code class="inline">Akkountni o‘chirish so‘rovi</code></li>
+        <li>Xat ichida quyidagilarni yozing:
+          <ul class="list">
+            <li>Ro‘yxatdan o‘tgan <b>email manzilingiz</b></li>
+            <li>(Ixtiyoriy) Ism yoki rol: o‘yinchi / menejer / liga yaratuvchi</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Qaysi ma’lumotlar o‘chiriladi?</h2>
+      <ul class="list">
+        <li>Foydalanuvchi akkounti</li>
+        <li>Profil ma’lumotlari</li>
+        <li>Jamoa bilan bog‘liq ma’lumotlar (agar mavjud bo‘lsa)</li>
+        <li>Statistik ma’lumotlar</li>
+      </ul>
+
+      <h2>Saqlanib qolishi mumkin bo‘lgan ma’lumotlar</h2>
+      <ul class="list">
+        <li>Anonimlashtirilgan statistik yozuvlar</li>
+        <li>Moliyaviy yoki huquqiy hisobotlar (agar mavjud bo‘lsa)</li>
+      </ul>
+
+      <div class="divider"></div>
+      <div class="note">
+        So‘rovlar odatda <b>30 kun ichida</b> ko‘rib chiqiladi va bajariladi.
+      </div>
+    </section>
+
+    <!-- RU -->
+    <section id="ru" class="card lang" aria-label="Russian">
+      <h1>Удаление аккаунта и данных</h1>
+      <p>
+        Если вы хотите удалить свой аккаунт в приложении <b>TopArena</b> и связанные с ним персональные данные,
+        выполните следующие шаги.
+      </p>
+
+      <h2>Как отправить запрос?</h2>
+      <ol class="list">
+        <li>Отправьте письмо на email: <a class="email" href="mailto:toparena.app@gmail.com">toparena.app@gmail.com</a></li>
+        <li>Тема письма: <code class="inline">Запрос на удаление аккаунта</code></li>
+        <li>В письме укажите:
+          <ul class="list">
+            <li>Email, использованный при регистрации</li>
+            <li>(Необязательно) ваше имя или роль: игрок / менеджер / создатель лиги</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Какие данные будут удалены?</h2>
+      <ul class="list">
+        <li>Аккаунт пользователя</li>
+        <li>Профиль пользователя</li>
+        <li>Данные команды (если есть)</li>
+        <li>Статистика пользователя</li>
+      </ul>
+
+      <h2>Какие данные могут быть сохранены?</h2>
+      <ul class="list">
+        <li>Обезличенные статистические данные</li>
+        <li>Юридически обязательные записи (если применимо)</li>
+      </ul>
+
+      <div class="divider"></div>
+      <div class="note">
+        Запросы обрабатываются в течение <b>30 дней</b>.
+      </div>
+    </section>
+
+    <!-- EN -->
+    <section id="en" class="card lang" aria-label="English">
+      <h1>Account & Data Deletion</h1>
+      <p>
+        If you would like to delete your <b>TopArena</b> account and all associated personal data, follow the steps below.
+      </p>
+
+      <h2>How to submit a request</h2>
+      <ol class="list">
+        <li>Email: <a class="email" href="mailto:toparena.app@gmail.com">toparena.app@gmail.com</a></li>
+        <li>Subject: <code class="inline">Account Deletion Request</code></li>
+        <li>In the email, include:
+          <ul class="list">
+            <li>The email address used for registration</li>
+            <li>(Optional) your name or role: player / manager / league creator</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2>Data that will be deleted</h2>
+      <ul class="list">
+        <li>User account</li>
+        <li>Profile information</li>
+        <li>Team-related data (if applicable)</li>
+        <li>User statistics</li>
+      </ul>
+
+      <h2>Data that may be retained</h2>
+      <ul class="list">
+        <li>Anonymized statistical records</li>
+        <li>Legal or compliance-related data (if applicable)</li>
+      </ul>
+
+      <div class="divider"></div>
+      <div class="note">
+        Requests are processed within <b>30 days</b>.
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> TopArena. Contact: toparena.app@gmail.com
+    </div>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById("y").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
